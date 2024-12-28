@@ -7,7 +7,7 @@ const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
-zokou({ nomCom: "menu1", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -33,16 +33,15 @@ const date = moment().format('DD/MM/YYYY');
 ┃⊛│◆ Storage  : 𝟴/𝟭𝟯𝟮 𝗚𝗕
 ┃⊛│◆ Date  : *${date}* 
 ┃⊛│◆ Platform : ${os.platform()}
-┃⊛│◆ Mastermind : ғʀᴇᴅɪᴇ ᴛᴇᴄʜ
+┃⊛│◆ Mastermind : *Marisel*
 ┃⊛│◆ Commands: ${cm.length}
 ┃⊛╰════────════◆
 ╰════─────════◆◆◆\n${readmore}`;
-    let menuMsg = `NJABULO JB CMD'S `;
+    let menuMsg = `*NJABULO JB CMD'S*`;
     for (const cat in coms) {
         menuMsg += `
 ╭━━━❂ *${cat}* ❂⁠⁠⁠⁠━━─••
 ║┊╭━━══••══━━••⊷ 
-║┊┊
 ║┊┊ `;for (const cmd of coms[cat]) {
           menuMsg += `          
 ║┊◆  *${cmd}*`    
@@ -52,7 +51,8 @@ const date = moment().format('DD/MM/YYYY');
 ╰════────════◆◆◆`
     }
     menuMsg += `
-> Made By Njabulo\n
+> Made By Njabulo
+> *The devs are not responsible if your accgers banned Use the bot appropriately*\n
 `;
    var lien = mybotpic();
    if (lien.match(/\.(mp4|gif)$/i)) {
