@@ -64,21 +64,7 @@ Skip to content
 
 ╭──「 ☆ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴏғғɪᴄᴇ☂︎─┈⊷ 
 ┃╭──────────
-┃│❒
-*ɢɪᴛʜᴜʙ ʟɪɴᴋ*
-> https://github.com/NjabuloJ/Njabulo-jb1 
-┃│
-*ɴᴏʀᴍᴀʟ sᴇssɪᴏɴ ɪᴅ*
-> 
-⁠┃│
-┃│╭───────────❒
-┃││ > tanks close JB
-┃││ > make star and forks 
-┃││> tanks support 
-┃│⁠⁠⁠⁠╰───────────────────❒
- ʜᴛᴛᴘs://ᴡᴀ.ᴍᴇ/26777821911
-*ᴡʜᴀᴛsᴀᴘᴘ ɢʀᴏᴜᴘ*
-> https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T
+┃│ channel group https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T
 ┌┤
 │╰────────┈⊷  
 ╰────────────┈⊷
