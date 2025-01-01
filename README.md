@@ -62,7 +62,23 @@ Skip to content
 ![ Stats](https://github-readme-stats.vercel.app/api/pin/?username=Enzotech&repo=ENZO-MD&show_owner=true&theme=dark)
 
 
-Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
-No file chosen
-Attach files by dragging & dropping, selecting or pasting them.
-Editing Njabulo-Jb/README.md at main · NjabuloJ/Njabulo-Jb
+╭──「 ☆ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴏғғɪᴄᴇ☂︎─┈⊷ 
+┃╭──────────
+┃│❒
+*ɢɪᴛʜᴜʙ ʟɪɴᴋ*
+> https://github.com/NjabuloJ/Njabulo-jb1 
+┃│
+*ɴᴏʀᴍᴀʟ sᴇssɪᴏɴ ɪᴅ*
+> 
+⁠┃│
+┃│╭───────────❒
+┃││ > tanks close JB
+┃││ > make star and forks 
+┃││> tanks support 
+┃│⁠⁠⁠⁠╰───────────────────❒
+ ʜᴛᴛᴘs://ᴡᴀ.ᴍᴇ/26777821911
+*ᴡʜᴀᴛsᴀᴘᴘ ɢʀᴏᴜᴘ*
+> https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T
+┌┤
+│╰────────┈⊷  
+╰────────────┈⊷
