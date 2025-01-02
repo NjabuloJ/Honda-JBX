@@ -1,8 +1,8 @@
 
 
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=red+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=YESSER+MD+;A+WHATSAPP+BOT;CREATED+BY+YESSER+TECH" alt="Typing SVG" /></a>
+<a><'/></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=red+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=Njabulo+MD+;A+WHATSAPP+BOT;CREATED+BY+Njabulo+TECH" alt="Typing SVG" /></a>
 
  
  
@@ -18,7 +18,7 @@
  <a href="https://whatsapp.com/channel/0029VafCB3o1HspqKxulv82s">
  <img alt="ʏᴇssᴇʀ ᴍᴅ" height="300" src="https://files.catbox.moe/r3x8bb.jpg">
 
-  ## ***ɴᴇᴡ ᴠɪsɪᴏɴ YESSER MD***
+  ## NJABULO JB 
 
   </h1> 
 <p align="center">ɪ ɪɴᴛʀᴏᴅᴜᴄᴇ <b>ʏᴇssᴇʀ ᴍᴅ</b>, ᴀ ᴘᴏᴡᴇʀғᴜʟ sɪᴍᴘʟᴇ ᴡᴀᴛsᴀᴘᴘ ʙᴏᴛ </p>
@@ -26,12 +26,12 @@
 
 
 
-## `ʜᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ🤠`
+## `NJABULO`
 
 
 1. Fork the repo
 
-<a href='https://github.com/Yassin994/YESSER-MD/fork' target="_black"><img alt='fork bot repo here' src='https://img.shields.io/badge/fork repo-black?style=for-the-badge&logo=github&logoColor=yellow'/></a>
+<a href='https://github.com/NjabuloJ/Njabulo-jb1/fork' target="_black"><img alt='fork bot repo here' src='https://img.shields.io/badge/fork repo-black?style=for-the-badge&logo=github&logoColor=yellow'/></a>
 
 
 
@@ -41,24 +41,6 @@
 
 
 #### ɪғ ʏᴏᴜ ɴᴇᴇᴅ sᴜᴘᴘᴏʀᴛ ᴄᴏɴᴛᴀᴄᴛ ᴡɪᴛʜ ᴏᴡɴᴇʀ
-
-
-
-
-</details>
-
-<details>
-<summary>ᴅᴇᴠs sᴜᴘᴘᴏʀᴛ</summary>
-  ᴊᴏɪɴ ɴᴏᴡ ✔️
-<a href='https://whatsapp.com/channel/0029VafCB3o1HspqKxulv82s target="_blank"><img alt='WHATSAPP' src='https://img.shields.io/badge/WhatsApp Channel Support-black?style=for-the-badge&logo=whatsapp&logoColor=red'/></a>
-
-<a href='https://chat.whatsapp.com/DFmm1OBboewBk9kEDBrfNvi' target="_blank"><img alt='WHATSAPP' src='https://img.shields.io/badge/Join WhatsApp Group-black?style=for-the-badge&logo=whatsapp&logoColor=yellow'/></a>
-
-<a href='https://wa.me/255621995482' target="_blank"><img alt='WHATSAPP' src='https://img.shields.io/badge/Wa Me Here-black?style=for-the-badge&logo=whatsapp&logoColor=pink'/></a>
-
-<a href='https://youtube.com/@yessertech?si=mkU9LFHXIGXy1Gbv' target="_blank"><img alt='YOUTUBE' src='https://img.shields.io/badge/Tutorial Here In Youtube-black?style=for-the-badge&logo=youtube&logoColor=pink'/></a>
-
-
 
 
 
@@ -118,10 +100,10 @@
 
 
 2. Now Deploy Botton Bot. 
-   <a href='https://dashboard.heroku.com/new?template=https://github.com/Yassin994/YESSER-MD' target="_blank"><img alt='Tap Deploy On Heroku Here' src='https://img.shields.io/badge/Deploy To Heroku Here-black?style=for-the-badge&logo=heroku&logoColor=purple'/></a>
+   <a href='https://dashboard.heroku.com/new?template=https://github.com/NjabuloJ/Njabulo-jb1' target="_blank"><img alt='Tap Deploy On Heroku Here' src='https://img.shields.io/badge/Deploy To Heroku Here-black?style=for-the-badge&logo=heroku&logoColor=purple'/></a>
 
   3. Now Deploy Normal Bot.
-     <a href='https://dashboard.heroku.com/new?template=https://github.com/Yassin994/YESSER-1' target="_blank"><img alt='Tap Deploy On Heroku Here' src='https://img.shields.io/badge/Deploy To Heroku Here-black?style=for-the-badge&logo=heroku&logoColor=purple'/></a>
+     <a href='https://dashboard.heroku.com/new?template=https://github.com/NjabuloJ/Njabulo-jb1' target="_blank"><img alt='Tap Deploy On Heroku Here' src='https://img.shields.io/badge/Deploy To Heroku Here-black?style=for-the-badge&logo=heroku&logoColor=purple'/></a>
 </details>
 
 
@@ -171,33 +153,12 @@
    
   
 3. Now Deploy Button Bot. 
-  <a href='https://replit.com/github/Yassin994/YESSER-MD' target="_blank"><img alt='replit' src='https://img.shields.io/badge/DEPLOY ON REPLIT-black?style=for-the-badge&logo=replit&logoColor=orange'/></a>
+  <a href='https://replit.com/https://github.com/NjabuloJ/Njabulo-jb1' target="_blank"><img alt='replit' src='https://img.shields.io/badge/DEPLOY ON REPLIT-black?style=for-the-badge&logo=replit&logoColor=orange'/></a>
 
   3. Now Deploy Normal Bot.
-     <a href='https://replit.com/github/Yassin994/YESSER-1' target="_blank"><img alt='replit' src='https://img.shields.io/badge/DEPLOY ON REPLIT-black?style=for-the-badge&logo=replit&logoColor=orange'/></a>
-
-### ʜᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ ᴏɴ ʀᴇᴘʟɪᴛ
-
-      1.Open account on replit 
-      2.Open bot repo then fork. 
-      3.Tap deploy button to "deploy on replit". 
-      4.Tap import from github 
-      5.After importing tap 👈 button down 👇 of replit dashboard. 
-      6.Choose config.cjs file then put your session 🆔 and others you need. 
-      7.Tap button written run to run your bot then go test it's work. 
-      ᴋᴇᴇᴘ ᴜsɪɴɢ YESSER MD
-  </details>
-
-
-#### ᴏᴡɴᴇʀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ 🤠
-
-
-    <a href='https://wa.me/255621995482 target="_blank"><img alt='Owner Info Tap Here' src='https://img.shields.io/badge/Owner Info Tap Here-black?style=for-the-badge&logo=google&logoColor=red'/></a>
-</details>
+     <a href='https://replit.com/https://github.com/NjabuloJ/Njabulo-jb1' target="_blank"><img alt='replit' src='https://img.shields.io/badge/DEPLOY ON REPLIT-black?style=for-the-badge&logo=replit&logoColor=orange'/></a>
    
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-.............................................................................
-######### ᴏɴʟɪɴᴇ ʙᴜssɪɴᴇs#######
       ❤️     
