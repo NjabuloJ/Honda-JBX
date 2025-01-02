@@ -33,8 +33,6 @@ Skip to content
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=blue&lines=𝗦𝗘𝗦𝗦𝗜𝗢𝗡+𝗜𝗗+𝗦𝗜𝗧𝗘+𝗜𝗦+𝗛𝗘𝗥𝗘)](https://git.io/typing-svg)
 
- . Now Deploy Botton Bot. 
-   <a href='https://dashboard.heroku.com/new?template=https://github.com/NjabuloJ/Njabulo-jb1' target="_blank"><img alt='Tap Deploy On Heroku Here' src='https://img.shields.io/badge/Deploy To Heroku Here-black?style=for-the-badge&logo=heroku&logoColor=purple'/></a
 
 
   <a href="https://fffi-0841e02d44bd.herokuapp.com/"><img title="GET-SESSION ID HERE" src="https://img.shields.io/badge/GET-SESSION ID HERE-h?color=green&style=for-the-badge&logo=nike" width="230" height="38.45"/></a></p>
