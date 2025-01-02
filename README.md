@@ -16,7 +16,7 @@
  
  
  <a href="https://whatsapp.com/channel/0029VafCB3o1HspqKxulv82s">
- <img alt="ʏᴇssᴇʀ ᴍᴅ" height="300" src="https://files.catbox.moe/r3x8bb.jpg">
+ <img alt="ʏᴇssᴇʀ ᴍᴅ" height="300" src="https://files.catbox.moe/140caw.jpg">
 
   ## NJABULO JB 
 
