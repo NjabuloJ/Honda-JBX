@@ -124,4 +124,7 @@
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-      ❤️     
+      ❤️   
+## JB online 🟢 
+
+[![Typing SVG](https://readme-typing-svg.=====================================
