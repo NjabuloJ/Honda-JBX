@@ -20,10 +20,6 @@
 
   ## NJABULO JB 
 
-  </h1> 
-<p align="center">ɪ ɪɴᴛʀᴏᴅᴜᴄᴇ <b>ʏᴇssᴇʀ ᴍᴅ</b>, ᴀ ᴘᴏᴡᴇʀғᴜʟ sɪᴍᴘʟᴇ ᴡᴀᴛsᴀᴘᴘ ʙᴏᴛ </p>
-
-
 
 
 ## `NJABULO`
@@ -31,22 +27,7 @@
 
 1. Fork the repo
 
-<a href='https://github.com/NjabuloJ/Njabulo-jb1/fork' target="_black"><img alt='fork bot repo here' src='https://img.shields.io/badge/fork repo-black?style=for-the-badge&logo=github&logoColor=yellow'/></a>
-
-
-
-
-
-##
-
-
-#### ɪғ ʏᴏᴜ ɴᴇᴇᴅ sᴜᴘᴘᴏʀᴛ ᴄᴏɴᴛᴀᴄᴛ ᴡɪᴛʜ ᴏᴡɴᴇʀ
-
-
-
-##
-
-#### ɢᴇᴛ sᴇssɪᴏɴ ɪᴅ ʜᴇʀᴇ
+<a href='https://github.com/NjabuloJ/Njabulo-jb1/fork' target="_black"><img alt='fork bot repo here' src='https://img.shields.io/badge/fork repo-black?style=for-the-badge&logo=github&logoColor=yell
 
 
 
@@ -66,10 +47,6 @@
 
 
 
-##
-
-####  ᴅᴇᴘʟᴏʏ ᴛᴏ ᴘᴀɴᴇʟ
-
 
 
 </details>
@@ -81,22 +58,11 @@
 
 
 2. Now Deploy
-   <a href='https://bot-hosting.net/?aff=1086839354611212288' target="_blank"><img alt='Tap Here For Deployment' src='https://img.shields.io/badge/Tap Deploy On Pannel Here-black?style=for-the-badge&logo=discord&logoColor=darkblue'/></a>
+   <a href='https://bot-hosting.net/?aff=1086839354611212288' target="_blimg alt='Tap Here For Deployment' src='https://img.shields.io/badge/Tap Deploy On Pannel Here-black?style=for-the-badge&logo=discord&logoColor=darkblue'/></a>
 </details>
 
 
-##
-
-#### ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴜᴋ 
-
-
-
-</details>
-
-<details>
-<summary>ᴛᴀᴘ ʜᴇʀᴇ ᴛᴏ ᴄᴏᴜɴᴛɪɴᴜᴇ</summary>
-1. If You don't have a account in Heroku. Create a account.
-    <a href='https://signup.heroku.com/' target="_blank"><img alt='Create Your Account Here' src='https://img.shields.io/badge/Create Your Account Here-black?style=for-the-badge&logo=heroku&logoColor=purple'/></a>
+## heroku 
 
 
 2. Now Deploy Botton Bot. 
@@ -108,9 +74,6 @@
 
 
 
-
-
-     sᴏʀʀʏ ɢᴜʏs ʀᴇɴᴅᴇʀ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ɴᴏᴛ ʏᴇᴛ ʙᴜᴛ sᴏᴏɴ ɪ ᴡɪʟʟ ᴋᴇᴇᴘ ɪᴛ ᴏᴜᴛ..
 
 
 
