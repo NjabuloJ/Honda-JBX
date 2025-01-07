@@ -107,6 +107,5 @@ _welcome to online bot 24/7_
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
       ❤️   
-## JB online 🟢 
-
-[![Typing SVG](https://readme-typing-svg.=====================================
+## Join channel online 🟢 
+https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T"><img src="https://img.shields.io/badge/Join Official Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white
