@@ -104,8 +104,4 @@ _welcome to online bot 24/7_
      <a href='https://replit.com/https://github.com/NjabuloJ/Njabulo-jb1' target="_blank"><img alt='replit' src='https://img.shields.io/badge/DEPLOY ON REPLIT-black?style=for-the-badge&logo=replit&logoColor=orange'/></a>
    
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-      ❤️   
-## Join channel online 🟢 
 https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T"><img src="https://img.shields.io/badge/Join Official Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white
