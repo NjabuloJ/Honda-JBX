@@ -19,16 +19,16 @@
  
 
 
-  <</details>
+  </details>
 
 <details>
 <summary> sᴇssɪᴏɴ sɪᴛᴇ </summary>
  
-   ɢᴇᴛ ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ ʜᴇʀᴇ ғᴏʀ ʙᴏᴏᴛᴏᴍ ʙᴏᴛ,👇
+   HONDA-JBK 
     <a href='https://Honda-JBK-scanner-8309ae116f64.herokuapp.com/' target="_blank"><img alt='Pair Code Your Here' src='https://img.shields.io/badge/Pair Your Code Here-black?style=for-the-badge&logo=git&logoColor=green'/></a>
 
 
-  ɢᴇᴛ ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ ʜᴇʀᴇ ғᴏʀ ɴᴏʀᴍᴀʟ👇
+  HONDA-JBK 👇
     <a href='https://Honda-JBK.onrender.com/' target="_blank"><img alt='Pair Code Your Here' src='https://img.shields.io/badge/Pair Your Code Here-black?style=for-the-badge&logo=git&logoColor=green'/></a>
 </details>
 
