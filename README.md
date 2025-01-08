@@ -8,12 +8,6 @@
 
 
 
-
-
- <p align="center"><img src="https://profile-counter.glitch.me/{ENZO-MD}/count.svg" alt="Enzo :: Visitor's Count" old_src="https://profile-counter.glitch.me/{enzo}/count.svg" /></p>
-
-
-
   
  
 
