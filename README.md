@@ -1,4 +1,4 @@
-🚔ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴏғғɪᴄᴇ ᴏɴʟɪɴᴇ 24/7🚔
+
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
@@ -85,21 +85,3 @@
 
 ![ Stats](https://github-readme-stats.vercel.app/api/pin/?username=Enzotech&repo=ENZO-MD&show_owner=true&theme=dark)
 
-
-
-
-
-
-
-
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-## CONTACT 
-  DM FOR SERIOUS BUSINESS
-
-   <a href="https://github.com/NjabuloJ/NjabuloJ-INFO"><img title="CONTACT-Njabulo" src="https://img.shields.io/badge/CONTACT-Njabulo-h?color=black&style=for-the-badge&logo=audi" width="240" height="45.45"/></a></p>
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-## 🚀☆ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴏғғɪᴄᴇ☂︎📃🚀
