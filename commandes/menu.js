@@ -27,17 +27,15 @@ const date = moment().format('DD/MM/YYYY');
   let infoMsg =  `
 ╭─── *${s.BOT}* ──┈⊷
 ┃๏╭───────────┈⊷
-┃๏│▸ *User*: ${s.OWNER_NAME}
+┃๏│▸ *User*: ${s.NJABULO}
 ┃๏│▸ *Prefix* : [ ${s.PREFIXE} ] 
 ┃๏│▸ *Mode* : *${mode}*
 ┃๏│▸ *Storage* : 𝟴/𝟭𝟯𝟮 𝗚𝗕
-┃๏│▸ *Date*  : *${date}* 
-┃๏│▸ *Platform* : ${os.platform()}
-┃๏│▸ *Mastermind* : *Marisel*
-┃๏│▸ *Commands* : ${cm.length}
+┃๏│▸ Platform : ${os.platform()}
+┃๏│▸ Commands : ${cm.length}
 ┃๏╰───────────┈⊷
 ╰──────────────┈⊷\n${readmore}`;
-    let menuMsg = `*NJABULO JB CMD'S*`;
+    let menuMsg = `*Honda JBk CMD'S*`;
     for (const cat in coms) {
         menuMsg += `
 ╭──── *${cat}* 〕─━┈⊷
@@ -51,7 +49,7 @@ const date = moment().format('DD/MM/YYYY');
 ╰──────────────┈⊷`
     }
     menuMsg += `
-> Made By Njabulo
+> Made By Njabulo JB 
 > *The devs are not responsible if your accgers banned Use the bot appropriately*\n
 `;
    var lien = mybotpic();
