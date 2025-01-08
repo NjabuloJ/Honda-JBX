@@ -1,5 +1,5 @@
 {
-  "name":"Njabulo",
+  "name":"Honda-JBX",
   "description":"Best whatsapp bot",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://files.catbox.moe/8bxg5k.jpg",
@@ -35,7 +35,7 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"Njabulo-Jb",
+      "value":"Honda-JBX",
       "required":false
 
     } ,
@@ -74,7 +74,7 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "Njabulo"
+    "value": "Honda-JBX"
   },
     "NUMERO_OWNER":
   {
