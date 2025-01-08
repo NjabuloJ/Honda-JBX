@@ -1,6 +1,5 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=blue&lines=𝗕𝗼𝘁+𝗰𝗿𝗲𝗮𝘁𝗲+𝗕𝘆+𝗡𝗷𝗮𝗯𝘂𝗹𝗼+𝗝𝗕𝗫)](https://git.io/typing-svg)
 
-## ⛲𝗛𝗢𝗡𝗗𝗔-𝗝𝗕𝗞- 𝗗𝗘𝗣𝗟𝗢𝗬 𝗢𝗡 𝗛𝗘𝗥𝗢𝗞𝗨 𝟭𝟬𝟬%⛲
 
 
 
@@ -16,9 +15,7 @@
 
 
   
-   
-   <a href="https://github.com/NjabuloJ/Njabulo-Jb/fork"><img title="FORK-REPO" src="https://img.shields.io/badge/FORK-REPO-h?color=blue&style=for-the-badge&logo=Nike" width="297" height="40.45"/></a></p>
-
+ 
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
