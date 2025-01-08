@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
-## ✅𝗛𝗢𝗡𝗗𝗔-𝗝𝗕𝗞- 𝗗𝗘𝗣𝗟𝗢𝗬 𝗢𝗡 𝗛𝗘𝗥𝗢𝗞𝗨 𝟭𝟬𝟬%💯
+## ⛲𝗛𝗢𝗡𝗗𝗔-𝗝𝗕𝗞- 𝗗𝗘𝗣𝗟𝗢𝗬 𝗢𝗡 𝗛𝗘𝗥𝗢𝗞𝗨 𝟭𝟬𝟬%⛲
 
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=30&pause=1000&color=0000FF&center=true&vCenter=true&width=815&height=60&lines=Njabulo+Jb+)](https://git.io/typing-svg) 
@@ -12,18 +12,6 @@
 
 
 
-## 𝐇𝐄𝐑𝐄 𝐈𝐒 𝐓𝐇𝐄 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 𝐅𝐎𝐑 𝐁𝐎𝐓 
-
-
-<p align="center">
-<a href="https://github.com/NjabuloJ/followers"><img title="Followers" src="https://img.shields.io/github/followers/NjabuloJ?color=blue&style=flat-square"></a>
-<a href="https://github.com/NjabuloJ/Njabulo-Jb/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/NjabuloJ/Njabulo-Jb?color=blue&style=flat-square"></a>
-<a href="https://github.com/NjabuloJ/Njabulo-Jb/network/members"><img title="Forks" src="https://img.shields.io/github/forks/NjabuloJ/Njabulo-Jb?color=blue&style=flat-square"></a>
-<a href="https://github.com/NjabuloJ/Njabulo-Jb/"><img title="Size" src="https://img.shields.io/github/repo-size/NjabuloJ/Njabulo-Jb?style=flat-square&color=blue"></a>
-<a href="https://github.com/NjabuloJ/Njabulo-Jb/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
-</p>
-<p align='center'>
-</p>
 
  <p align="center"><img src="https://profile-counter.glitch.me/{ENZO-MD}/count.svg" alt="Enzo :: Visitor's Count" old_src="https://profile-counter.glitch.me/{enzo}/count.svg" /></p>
 
