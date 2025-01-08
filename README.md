@@ -1,13 +1,9 @@
-
-
-<img src="https://files.catbox.moe/xwv55g.jpg" height="90" width="100%">
-
 ## ⛲𝗛𝗢𝗡𝗗𝗔-𝗝𝗕𝗞- 𝗗𝗘𝗣𝗟𝗢𝗬 𝗢𝗡 𝗛𝗘𝗥𝗢𝗞𝗨 𝟭𝟬𝟬%⛲
 
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=30&pause=1000&color=0000FF&center=true&vCenter=true&width=815&height=60&lines=𝗕𝗼𝘁 𝗰𝗿𝗲𝗮𝘁𝗲 𝗕𝘆+𝗡𝗷𝗮𝗯𝘂𝗹𝗼 𝗝𝗕𝗫+)](https://git.io/typing-svg) 
 
-<p align="centre"><img src="https://i.imgur.com/02GMMaE.jpeg" width="500" height="500" />
+
+<p align="centre"><img src="https://files.catbox.moe/xwv55g.jpg" width="500" height="500" />
 
 
 
