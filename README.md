@@ -19,7 +19,18 @@
  
 
 
-  <img title="GET-SESSION ID HERE" src="https://img.shields.io/badge/GET-SESSION ID HERE-h?color=green&style=for-the-badge&logo=nike" width="230" height="38.45"/></a></p>
+  <</details>
+
+<details>
+<summary> sᴇssɪᴏɴ sɪᴛᴇ </summary>
+ 
+   ɢᴇᴛ ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ ʜᴇʀᴇ ғᴏʀ ʙᴏᴏᴛᴏᴍ ʙᴏᴛ,👇
+    <a href='https://Honda-JBK-scanner-8309ae116f64.herokuapp.com/' target="_blank"><img alt='Pair Code Your Here' src='https://img.shields.io/badge/Pair Your Code Here-black?style=for-the-badge&logo=git&logoColor=green'/></a>
+
+
+  ɢᴇᴛ ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ ʜᴇʀᴇ ғᴏʀ ɴᴏʀᴍᴀʟ👇
+    <a href='https://Honda-JBK.onrender.com/' target="_blank"><img alt='Pair Code Your Here' src='https://img.shields.io/badge/Pair Your Code Here-black?style=for-the-badge&logo=git&logoColor=green'/></a>
+</details>
 
   
   <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
