@@ -1,3 +1,5 @@
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=blue&lines=𝗕𝗼𝘁+𝗰𝗿𝗲𝗮𝘁𝗲+𝗕𝘆+𝗡𝗷𝗮𝗯𝘂𝗹𝗼+𝗝𝗕𝗫)](https://git.io/typing-svg)
+
 ## ⛲𝗛𝗢𝗡𝗗𝗔-𝗝𝗕𝗞- 𝗗𝗘𝗣𝗟𝗢𝗬 𝗢𝗡 𝗛𝗘𝗥𝗢𝗞𝗨 𝟭𝟬𝟬%⛲
 
 
@@ -12,13 +14,6 @@
  <p align="center"><img src="https://profile-counter.glitch.me/{ENZO-MD}/count.svg" alt="Enzo :: Visitor's Count" old_src="https://profile-counter.glitch.me/{enzo}/count.svg" /></p>
 
 
-
-
-
-
-  
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=blue&lines=𝗕𝗼𝘁+𝗰𝗿𝗲𝗮𝘁𝗲+𝗕𝘆+𝗡𝗷𝗮𝗯𝘂𝗹𝗼+𝗝𝗕𝗫)](https://git.io/typing-svg)
- 
 
   
    
