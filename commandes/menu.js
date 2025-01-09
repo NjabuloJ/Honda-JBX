@@ -160,7 +160,7 @@ zokou({
   } = await fetchGitHubStats();
   const _0x15b49d = _0x49849e.toLocaleString();
   let _0x5b71b7 = "\n*" + _0x8b5488 + " " + _0x562fad + "*\n\n╭━━━━✧ *NJABULO JB* ✧━━━━❖\n┊✺┌────••••────⊷\n┊✺│ *User :*  " + s.OWNER_NAME + "\n┊✺│ *Prefix :* " + s.PREFIXES + " \n┊✺│ *Time :* " + _0x56e63a + "\n┊✺│ *Date :* " + _0x5a4788 + " \n┊✺│ *Mode :* " + _0x3c2244 + "\n┊✺│ *Time Zone :* " + s.TZ + "\n┊✺│ *Total Users :* " + _0x15b49d + "  \n┊✺│ *Ram :* " + format(os.totalmem() - os.freemem()) + '/' + format(os.totalmem()) + " \n┊✺│ *Uptime :* " + runtime(process.uptime()) + " \n┊✺└────••••────⊷\n╰━━━━••✧Marisel✧••━━━◆ \n\n";
-  let _0xdb265e = "*NJABULO JB CMD'S*\n\n" + readmore;
+  let _0xdb265e = "> *NJABULO JB CMD'S*\n\n" + readmore;
   const _0x43936d = Object.keys(_0x406c88).sort();
   let _0x20e229 = 0x1;
   for (const _0x2d5030 of _0x43936d) {
