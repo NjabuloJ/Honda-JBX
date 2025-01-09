@@ -1,84 +1,194 @@
-const util = require('util');
-const fs = require('fs-extra');
-const { zokou } = require(__dirname + "/../framework/zokou");
-const { format } = require(__dirname + "/../framework/mesfonctions");
-const os = require("os");
+const axios = require("axios");
+const {
+  zokou
+} = require(__dirname + '/../framework/zokou');
+const {
+  format
+} = require(__dirname + '/../framework/mesfonctions');
+const os = require('os');
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
-const more = String.fromCharCode(8206)
-const readmore = more.repeat(4001)
-zokou({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//zokou");
-    var coms = {};
-    var mode = "public";
-    if ((s.MODE).toLocaleLowerCase() != "yes") {
-        mode = "private";
-    }
-    cm.map(async (com, index) => {
-        if (!coms[com.categorie])
-            coms[com.categorie] = [];
-        coms[com.categorie].push(com.nomCom);
-    });
-    moment.tz.setDefault('Etc/GMT');
-// Créer une date et une heure en GMT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
-  let infoMsg =  `
-╭─── *${s.BOT}* ──┈⊷
-┃๏╭───────────┈⊷
-┃๏│▸ *User*: ${s.NJABULO}
-┃๏│▸ *Prefix* : [ ${s.PREFIXE} ] 
-┃๏│▸ *Mode* : *${mode}*
-┃๏│▸ *Storage* : 𝟴/𝟭𝟯𝟮 𝗚𝗕
-┃๏│▸ Platform : ${os.platform()}
-┃๏│▸ Commands : ${cm.length}
-┃๏╰───────────┈⊷
-╰──────────────┈⊷\n${readmore}`;
-    let menuMsg = `*Honda JBk CMD'S*`;
-    for (const cat in coms) {
-        menuMsg += `
-╭──── *${cat}* 〕─━┈⊷
-║ ╭──────────━┈⊷
-┃ │ `;for (const cmd of coms[cat]) {
-          menuMsg += `          
-║┊◆  *${cmd}*`    
-        } 
-        menuMsg +=`
-║ ╰───────────┈⊷ 
-╰──────────────┈⊷`
-    }
-    menuMsg += `
-> Made By Njabulo JB 
-> *The devs are not responsible if your accgers banned Use the bot appropriately*\n
-`;    
-}
-
-        // Send the generated menu to the user
-        try {
-            await client.sendMessage(m.chat, {
-                text: menuText,
-                contextInfo: {
-                    mentionedJid: [m.sender], // Mention the sender
-                    externalAdReply: {
-                        title: "Njabulo JB",
-                        body: "Thanks To Marisel",
-                        thumbnailUrl: "https://files.catbox.moe/erkmba.jpg",
-                        sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
-                        mediaType: 1,
-                        renderLargerThumbnail: true
-                    }
-                }
-            });
-        } catch (error) {
-            console.error("Error sending message:", error);
-            m.reply('An error occurred while sending the menu.');
-        }
-
-    } catch (error) {
-        console.error("Error:", error);
-        m.reply('An unexpected error occurred while generating the menu.');
-    }
+const styles = {
+  0xa: {
+    '0': '0',
+    '1': '1',
+    '2': '2',
+    '3': '3',
+    '4': '4',
+    '5': '5',
+    '6': '6',
+    '7': '7',
+    '8': '8',
+    '9': '9',
+    'a': 'ᴀ',
+    'b': 'ʙ',
+    'c': 'ᴄ',
+    'd': 'ᴅ',
+    'e': 'ᴇ',
+    'f': 'ғ',
+    'g': 'ɢ',
+    'h': 'ʜ',
+    'i': 'ɪ',
+    'j': 'ᴊ',
+    'k': 'ᴋ',
+    'l': 'ʟ',
+    'm': 'ᴍ',
+    'n': 'ɴ',
+    'o': 'ᴏ',
+    'p': 'ᴘ',
+    'q': 'ϙ',
+    'r': 'ʀ',
+    's': 's',
+    't': 'ᴛ',
+    'u': 'ᴜ',
+    'v': 'v',
+    'w': 'ᴡ',
+    'x': 'x',
+    'y': 'ʏ',
+    'z': 'ᴢ',
+    'A': 'ᴀ',
+    'B': 'ʙ',
+    'C': 'ᴄ',
+    'D': 'ᴅ',
+    'E': 'ᴇ',
+    'F': 'ғ',
+    'G': 'ɢ',
+    'H': 'ʜ',
+    'I': 'ɪ',
+    'J': 'ᴊ',
+    'K': 'ᴋ',
+    'L': 'ʟ',
+    'M': 'ᴍ',
+    'N': 'ɴ',
+    'O': 'ᴏ',
+    'P': 'ᴘ',
+    'Q': 'ϙ',
+    'R': 'ʀ',
+    'S': 's',
+    'T': 'ᴛ',
+    'U': 'ᴜ',
+    'V': 'v',
+    'W': 'ᴡ',
+    'X': 'x',
+    'Y': 'ʏ',
+    'Z': 'ᴢ'
+  }
 };
-
-
+const applyStyle = (_0x134f71, _0x10e051) => {
+  const _0x2ebd83 = styles[_0x10e051];
+  return _0x134f71.split('').map(_0x5df056 => _0x2ebd83[_0x5df056] || _0x5df056).join('');
+};
+const more = String.fromCharCode(0x200e);
+const readmore = more.repeat(0xfa1);
+const runtime = function (_0x591a8f) {
+  _0x591a8f = Number(_0x591a8f);
+  var _0x4889a9 = Math.floor(_0x591a8f / 86400);
+  var _0x39e03f = Math.floor(_0x591a8f % 86400 / 0xe10);
+  var _0x59749d = Math.floor(_0x591a8f % 0xe10 / 0x3c);
+  var _0x487520 = Math.floor(_0x591a8f % 0x3c);
+  var _0x3dee11 = _0x4889a9 > 0x0 ? _0x4889a9 + (_0x4889a9 == 0x1 ? " day, " : " d, ") : '';
+  var _0x263dac = _0x39e03f > 0x0 ? _0x39e03f + (_0x39e03f == 0x1 ? " hour, " : " h, ") : '';
+  var _0x74ac55 = _0x59749d > 0x0 ? _0x59749d + (_0x59749d == 0x1 ? " minute, " : " m, ") : '';
+  var _0x170e15 = _0x487520 > 0x0 ? _0x487520 + (_0x487520 == 0x1 ? " second" : " s") : '';
+  return _0x3dee11 + _0x263dac + _0x74ac55 + _0x170e15;
+};
+const fetchGitHubStats = async () => {
+  try {
+    const _0x463b55 = await axios.get("https://api.github.com/repos/NjabuloJ/Njabulo-Jb");
+    const _0xfc7f94 = _0x463b55.data.forks_count;
+    const _0x4d3a3a = _0x463b55.data.stargazers_count;
+    const _0x2c35d6 = _0xfc7f94 * 0x2 + _0x4d3a3a * 0x2;
+    return {
+      'forks': _0xfc7f94,
+      'stars': _0x4d3a3a,
+      'totalUsers': _0x2c35d6
+    };
+  } catch (_0x1ddfb2) {
+    console.error("Error fetching GitHub stats:", _0x1ddfb2);
+    return {
+      'forks': 0x0,
+      'stars': 0x0,
+      'totalUsers': 0x0
+    };
+  }
+};
+zokou({
+  'nomCom': "menu",
+  'categorie': "General"
+}, async (_0x4517d6, _0x339d30, _0x5d76bb) => {
+  let {
+    ms: _0x1d59bc,
+    repondre: _0x244187,
+    prefixe: _0x4a45d3,
+    nomAuteurMessage: _0x562fad
+  } = _0x5d76bb;
+  let {
+    cm: _0x22ad72
+  } = require(__dirname + "/../framework/zokou");
+  var _0x406c88 = {};
+  var _0x3c2244 = "public";
+  if (s.MODE.toLocaleLowerCase() != "public") {
+    _0x3c2244 = 'Private';
+  }
+  _0x22ad72.map(async (_0x57af5e, _0x5e9c49) => {
+    const _0x225ccc = _0x57af5e.categorie.toUpperCase();
+    if (!_0x406c88[_0x225ccc]) {
+      _0x406c88[_0x225ccc] = [];
+    }
+    _0x406c88[_0x225ccc].push(_0x57af5e.nomCom.toUpperCase());
+  });
+  moment.tz.setDefault(s.TZ);
+  const _0x56e63a = moment().format('HH:mm:ss');
+  const _0x5a4788 = moment().format("DD/MM/YYYY");
+  const _0x247268 = moment().hour();
+  let _0x8b5488 = "Good Night";
+  if (_0x247268 >= 0x0 && _0x247268 <= 0xb) {
+    _0x8b5488 = "Good Morning";
+  } else {
+    if (_0x247268 >= 0xc && _0x247268 <= 0x10) {
+      _0x8b5488 = "Good Afternoon";
+    } else {
+      if (_0x247268 >= 0x10 && _0x247268 <= 0x15) {
+        _0x8b5488 = "Good Evening";
+      } else if (_0x247268 >= 0x15 && _0x247268 <= 0x17) {
+        _0x8b5488 = "Good Night";
+      }
+    }
+  }
+  const {
+    totalUsers: _0x49849e
+  } = await fetchGitHubStats();
+  const _0x15b49d = _0x49849e.toLocaleString();
+  let _0x5b71b7 = "\n*" + _0x8b5488 + " " + _0x562fad + "*\n\n╭━━━━✧ *NJABULO JB* ✧━━━━❖\n┊✺┌────••••────⊷\n┊✺│ *User :*  " + s.OWNER_NAME + "\n┊✺│ *Prefix :* " + s.PREFIXES + " \n┊✺│ *Time :* " + _0x56e63a + "\n┊✺│ *Date :* " + _0x5a4788 + " \n┊✺│ *Mode :* " + _0x3c2244 + "\n┊✺│ *Time Zone :* " + s.TZ + "\n┊✺│ *Total Users :* " + _0x15b49d + "  \n┊✺│ *Ram :* " + format(os.totalmem() - os.freemem()) + '/' + format(os.totalmem()) + " \n┊✺│ *Uptime :* " + runtime(process.uptime()) + " \n┊✺└────••••────⊷\n╰━━━━••✧Marisel✧••━━━◆ \n\n";
+  let _0xdb265e = "*NJABULO JB CMD'S*\n\n" + readmore;
+  const _0x43936d = Object.keys(_0x406c88).sort();
+  let _0x20e229 = 0x1;
+  for (const _0x2d5030 of _0x43936d) {
+    _0xdb265e += "\n*╭━━━❂ " + applyStyle(_0x2d5030.toUpperCase(), 0xa) + " ❂⁠⁠⁠⁠━━─••*\n║╭━━══••══━━••⊷";
+    const _0x57d200 = _0x406c88[_0x2d5030].sort();
+    for (const _0x43fc7b of _0x57d200) {
+      _0xdb265e += " \n║┊◆ " + _0x20e229++ + ". " + applyStyle(_0x43fc7b, 0xa);
+    }
+    _0xdb265e += "\n║╰━━══••══━━••⊷\n╰════────════◆◆◆\n";
+  }
+  _0xdb265e += readmore + "\n*Combination Of Different Bases* \n\n   *Clonning is allowed at own risk*\n   \n _Thanks For choosing Njabulo Jb_\n\n  Created by *Njabulo* \n  \n     *Marisel Made This*\n";
+  try {
+    await _0x339d30.sendMessage(_0x4517d6, {
+      'text': _0x5b71b7 + _0xdb265e,
+      'contextInfo': {
+        'mentionedJid': [_0x562fad],
+        'externalAdReply': {
+          'title': "Marisel Made The Button",
+          'body': "Njabulo Jb",
+          'thumbnailUrl': "https://files.catbox.moe/xfn913.jpg",
+          'sourceUrl': "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+          'mediaType': 0x1,
+          'renderLargerThumbnail': true
+        }
+      }
+    });
+  } catch (_0x354ca3) {
+    console.log("🥵🥵 Menu erreur " + _0x354ca3);
+    _0x244187("🥵🥵 Menu erreur " + _0x354ca3);
+  }
+});
