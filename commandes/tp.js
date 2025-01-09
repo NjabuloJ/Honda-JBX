@@ -44,12 +44,11 @@ const date = moment().format('DD/MM/YYYY');
  *3. The Bot will send you a code. Copy that code. Then whatsapp will sent Notification*
  *4. Tap on that notification then enter in the code that Whatsapp sent you.*
  *5. It will load for sometime then The Bot will send A long session to your inbox on whatsapp at your own number.*
- *6. Copy that long session and sent it to your deployer. 
-> *Made by : *Marisel™*
+ *6. Copy that long session and sent it to your deployer.*
  `;
     
 let menuMsg = `
-> *Made by : *Marisel™*
+> *Made by : Marisel™*
 `;
 
    var lien = mybotpic();
