@@ -202,7 +202,7 @@ if (conf.POPKID_XTECH === "yes") {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\tPOPKID MD ONLINE");
+            console.log("\tNJABULO JB ACTIVE");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -286,7 +286,7 @@ function mybotpic() {
             };
 
 
-// POPKID MD DID EVERYTHING ,,,DO NOT COPY ...
+//  DO NOT COPY ...
 if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
 const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🔨', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🙂', '🎊', '🎉', '🎁', '⛑️', '👋']
          const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
@@ -305,7 +305,7 @@ if (origineMessage === auteurMessage && conf.AUTOREAD_MESSAGES === "yes") {
 zk.readMessages([ms.key]);
   }
 
-    //ANTICALL POPKID-MD 
+    //ANTICALL 
 
 /*const zk = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
@@ -317,7 +317,7 @@ zk.readMessages([ms.key]);
 
     await zk.rejectCall(callId, callerId);
     await zk.sendMessage(callerId, {
-      text: "```❗📵 sᴏʀʀʏ ,ɴᴏ ᴄᴀʟʟs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ,ᴋɪɴᴅʟʏ ᴛᴇxᴛ, ᴛʜᴀɴᴋ ʏᴏᴜ.\n> 𝐏𝐎𝐏𝐊𝐈𝐃-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒 ."
+      text: "```❗📵 Owner Busy Please Call Back Later."
     });
   }
 });*/ 
@@ -743,7 +743,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*POPKID MD WELCOME MESSAGE*`;
+            let msg = `*NJABULO JB WELCOME MESSAGE*`;
             let membres = group.participants;
             for (let membre of membres) {
                 msg += ` \n❒ *Hey* 🖐️ @${membre.split("@")[0]} WELCOME TO OUR GROUP. \n\n`;
@@ -877,18 +877,18 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Popkid Md is connecting...");
+                console.log("ℹ️ Bot is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Popkid Md Connected to WhatsApp! ☺️");
+                console.log("✅ Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Popkid Md is Online 🕸\n\n");
+                console.log("Njabulo is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading Popkid Commands ...\n");
+                console.log("Loading Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
