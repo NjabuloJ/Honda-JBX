@@ -36,18 +36,21 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
      *IMPORTANT INFO* 
-❒─────𝗛𝗢𝗡𝗗𝗔-𝗝𝗕𝗫────❒
+❒──────────────────❒
 *GITHUB LINK*
-> https://github.com/NjabuloJ/Honda-JBX
+> https://github.com/NjabuloJ/Njabulo-jb
 
 *WHATSAPP CHANNEL*
 > https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T
 ⁠
 ╭───────────────────❒
 │❒⁠⁠⁠⁠ support : star ✨ and forks 
-│❒⁠⁠⁠⁠ owner : *Njabulo*
-| 𝗛𝗢𝗡𝗗𝗔-𝗝𝗕𝗫𝗠𝗨𝗟𝗧𝗜𝗗𝗘𝗩𝗜𝗖𝗘
+│❒⁠⁠⁠⁠ owner 1 : Njabulo
+|❒⁠⁠⁠⁠ owner 2 : Marisel
 ⁠⁠⁠⁠╰───────────────────❒
+
+       *Njabulo JB*
+❒───────────────────❒
 
    var lien = mybotpic();
 
