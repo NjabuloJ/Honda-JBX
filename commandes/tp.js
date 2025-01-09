@@ -34,24 +34,22 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
- *Hellow Pal Here is How To Deploy Your Own Bot*
- *Tap on the link to get session*
- > *https://shorturl.at/9WfYs*
+> *Hellow Pal Here is How To Deploy Your Own Bot*
+> *Tap on the link to get session* 
+> *https://shorturl.at/9WfYs*
  
  *STEPS TO GET SESSION*
- 
  *1. Open link above*
  *2. Enter your whatsapp number with your country code eg : 254,255. And tap submit*
  *3. The Bot will send you a code. Copy that code. Then whatsapp will sent Notification*
  *4. Tap on that notification then enter in the code that Whatsapp sent you.*
  *5. It will load for sometime then The Bot will send A long session to your inbox on whatsapp at your own number.*
- *6. Copy that long session and sent it to your deployer.*
- 
- *NOTE; Bots are deployed on Heroku They arent free*
+ *6. Copy that long session and sent it to your deployer. 
+> *Made by : *Marisel™*
  `;
     
 let menuMsg = `
-> Made by : *Marisel™*
+> *Made by : *Marisel™*
 `;
 
    var lien = mybotpic();
