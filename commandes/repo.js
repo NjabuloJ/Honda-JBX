@@ -1,8 +1,8 @@
-module.exports = async (context) => {
-  const { client, m } = context;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const { zokou } = require("../framework/zokou");
 
-  try {
-    // Fetch repository data from GitHub
+zokou({ nomCom: "bot", catégorie:"Général", reaction: "🖤", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     const response = await fetch("https://api.github.com/repos/NjabuloJ/Njabulo-jb");
     const repoData = await response.json();
 
@@ -21,9 +21,8 @@ module.exports = async (context) => {
     const lastUpdateDate = new Date(repoInfo.lastUpdate).toLocaleDateString("en-GB");
 
     // Construct message caption
-    const messageCaption = `
-      > *Hey. Here is Njabulo-Jb Bot Repo*
-      > *If you enjoy using it dont forget to fork and star*
+    const messageCaption = `> *Hey ${pushname} Welcome to the Bot Repo*
+    > *Here are some info About the bot*
       ╭───────────────────
       │*Stars:* ${repoInfo.stars}
       │*Forks:* ${repoInfo.forks}
@@ -31,7 +30,7 @@ module.exports = async (context) => {
       │*Last Update:* ${lastUpdateDate}
       │*Owner:* ${repoInfo.owner}
       │*Repository:* ${repoInfo.url}
-      │*Session:* https://keithmd.onrender.com
+      │*Session:* Coming soon
       ╰───────────────────
     `;
 
@@ -41,8 +40,8 @@ module.exports = async (context) => {
       contextInfo: {
         mentionedJid: [m.sender], // Mention the sender
         externalAdReply: {
-          title: "Marisel Masterminded",
-          body: "Njabulo Jb",
+          title: "Njabulo",
+          body: "Thanks To Marisel",
           sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
           mediaType: 1,
           renderLargerThumbnail: true
