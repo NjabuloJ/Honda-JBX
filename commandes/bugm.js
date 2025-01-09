@@ -34,7 +34,7 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
 let infoMsg =  `
-━━━━✺ *NJABULO JB BUG'S * ✺━━━━
+> *NJABULO JB BUG'S *
 ╭─────────────────────❍ 
 │☆ bug
 │☆ crash
