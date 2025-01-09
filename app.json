@@ -1,14 +1,14 @@
 {
-  "name": "🚮 POPKID-XTECH ❤️",
-  "description": "This BOT was developed by Popkid.",
+  "name": "Njabulo",
+  "description": "This BOT was developed by Marisel",
   "keywords": [
     "bot",
     "node",
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
-  "repository": "https://github.com/Popkiddevs/POPKID-XTECH",
+  "logo": "https://files.catbox.moe/xfn913.jpg",
+  "repository": "https://github.com/NjabuloJ/Njabulo-JB1",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -49,12 +49,12 @@
     },
     "BOT_NAME": {
       "description": "put A name for your bot",
-      "value": "POPKID-XTECH",
+      "value": "Njabulo Jb",
       "required": false
     },
     "BOT_MENU_LINKS": {
       "description": "add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
+      "value":"https://files.catbox.moe/dyc9kw.jpg",
       "required": false
     },
     "PUBLIC_MODE": {
@@ -80,12 +80,12 @@
     "OWNER_NAME": {
       "desc": "Your Name",
       "required": false,
-      "value": "POPKID KE"
+      "value": "Njabulo"
     },
     "NUMERO_OWNER": {
       "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
       "required": false,
-      "value": "254111385747"
+      "value": "254740007567"
     },
     "WARN_COUNT": {
       "desc": "this is the limit of warn for warning commandes",
