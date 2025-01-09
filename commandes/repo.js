@@ -21,11 +21,10 @@ zokou({ nomCom: "repo", catégorie:"Général", reaction: "🔎", nomFichier: __
       const releaseDate = new Date(data.created_at).toLocaleDateString('en-GB');
       const lastUpdateDate = new Date(data.updated_at).toLocaleDateString('en-GB');
 
-      const gitdata = `> *Hi there,If you need Njabulo-Jb repo*\n
-      > *𝐀𝐥𝐥 𝐘𝐨𝐮 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐊𝐧𝐨𝐰 𝐢𝐬 𝐇𝐞𝐫𝐞.*
+      const gitdata = `> *Hi there,If you need Njabulo-Jb repo*\n> *Anything You want Is Here*
 ╭─────────────────
 ││ *𝐒𝐞𝐬𝐬𝐢𝐨𝐧* https://shorturl.at/9WfYs
-││ *𝐑𝐞𝐩𝐨:* ${data.html_url}
+││ *𝐑𝐞𝐩𝐨:* https://shorturl.at/0TtVa
 ││ *𝐒𝐭𝐚𝐫𝐬:* ${repoInfo.stars}
 ││ *𝐅𝐨𝐫𝐤𝐬:* ${repoInfo.forks}
 ││ *𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐃𝐚𝐭𝐞:* ${releaseDate}
