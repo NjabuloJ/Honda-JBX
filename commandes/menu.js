@@ -42,7 +42,7 @@ const date = moment().format('DD/MM/YYYY');
 ║ ╭──────────━┈⊷
 ┃ │ `;for (const cmd of coms[cat]) {
           menuMsg += `          
-┃๏│▸  *${cmd}*`    
+║┊◆  *${cmd}*`    
         } 
         menuMsg +=`
 ║ ╰───────────┈⊷ 
@@ -51,28 +51,34 @@ const date = moment().format('DD/MM/YYYY');
     menuMsg += `
 > Made By Njabulo JB 
 > *The devs are not responsible if your accgers banned Use the bot appropriately*\n
-`;
-   var lien = mybotpic();
-   if (lien.match(/\.(mp4|gif)$/i)) {
-    try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Luckymd*, déveloper Marisel" , gifPlayback : true }, { quoted: ms });
-    }
-    catch (e) {
-       console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Luckymd*, déveloper Fredie Tech" }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-else {
-    repondre(infoMsg + menuMsg);
+`;    
 }
-});
+
+        // Send the generated menu to the user
+        try {
+            await client.sendMessage(m.chat, {
+                text: menuText,
+                contextInfo: {
+                    mentionedJid: [m.sender], // Mention the sender
+                    externalAdReply: {
+                        title: "Njabulo JB",
+                        body: "Thanks To Marisel",
+                        thumbnailUrl: "https://files.catbox.moe/erkmba.jpg",
+                        sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+                        mediaType: 1,
+                        renderLargerThumbnail: true
+                    }
+                }
+            });
+        } catch (error) {
+            console.error("Error sending message:", error);
+            m.reply('An error occurred while sending the menu.');
+        }
+
+    } catch (error) {
+        console.error("Error:", error);
+        m.reply('An unexpected error occurred while generating the menu.');
+    }
+};
+
+
