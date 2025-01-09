@@ -1,169 +1,57 @@
+module.exports = async (context) => {
+  const { client, m } = context;
 
-const util = require('util');
-const fs = require('fs-extra');
-const { zokou } = require(__dirname + "/../framework/zokou");
-const { format } = require(__dirname + "/../framework/mesfonctions");
-const os = require("os");
-const moment = require("moment-timezone");
-const s = require(__dirname + "/../set");
-const more = String.fromCharCode(8206)
-const readmore = more.repeat(4001)
+  try {
+    // Fetch repository data from GitHub
+    const response = await fetch("https://api.github.com/repos/NjabuloJ/Njabulo-jb");
+    const repoData = await response.json();
 
-zokou({ nomCom: "repo", categorie: "General" }, async (dest, zk, commandeOptions) => {
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//zokou");
-    var coms = {};
-    var mode = "public";
-    
-    if ((s.MODE).toLocaleLowerCase() != "yes") {
-        mode = "private";
-    }
+    // Extract relevant information
+    const repoInfo = {
+      stars: repoData.stargazers_count,
+      forks: repoData.forks_count,
+      lastUpdate: repoData.updated_at,
+      owner: repoData.owner.login,
+      createdAt: repoData.created_at,
+      url: repoData.html_url
+    };
 
+    // Format dates
+    const createdDate = new Date(repoInfo.createdAt).toLocaleDateString("en-GB");
+    const lastUpdateDate = new Date(repoInfo.lastUpdate).toLocaleDateString("en-GB");
 
-    
+    // Construct message caption
+    const messageCaption = `
+      > *Hey. Here is Njabulo-Jb Bot Repo*
+      > *If you enjoy using it dont forget to fork and star*
+      ╭───────────────────
+      │*Stars:* ${repoInfo.stars}
+      │*Forks:* ${repoInfo.forks}
+      │*Release Date:* ${createdDate}
+      │*Last Update:* ${lastUpdateDate}
+      │*Owner:* ${repoInfo.owner}
+      │*Repository:* ${repoInfo.url}
+      │*Session:* https://keithmd.onrender.com
+      ╰───────────────────
+    `;
 
-    cm.map(async (com, index) => {
-        if (!coms[com.categorie])
-            coms[com.categorie] = [];
-        coms[com.categorie].push(com.nomCom);
+    // Send the generated message to the user
+    await client.sendMessage(m.chat, {
+      text: messageCaption,
+      contextInfo: {
+        mentionedJid: [m.sender], // Mention the sender
+        externalAdReply: {
+          title: "Marisel Masterminded",
+          body: "Njabulo Jb",
+          sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+          mediaType: 1,
+          renderLargerThumbnail: true
+        }
+      }
     });
 
-    moment.tz.setDefault('Etc/GMT');
-
-// Créer une date et une heure en GMT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
-
-  let infoMsg =  `
-     *IMPORTANT INFO* 
-❒──────────────────❒
-*GITHUB LINK*
-> https://github.com/NjabuloJ/Njabulo-jb
-
-*WHATSAPP CHANNEL*
-> https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T
-⁠
-╭───────────────────❒
-│❒⁠⁠⁠⁠ support : star ✨ and forks 
-│❒⁠⁠⁠⁠ owner 1 : Njabulo
-|❒⁠⁠⁠⁠ owner 2 : Marisel
-⁠⁠⁠⁠╰───────────────────❒
-
-       *Njabulo JB*
-❒───────────────────❒
-
-   var lien = mybotpic();
-
-   if (lien.match(/\.(mp4|gif)$/i)) {
-    try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-else {
-    
-    repondre(infoMsg + menuMsg);
-    
-}
-
-}); 
-
-
-/*const util = require('util');
-const fs = require('fs-extra');
-const { zokou } = require(__dirname + "/../framework/zokou");
-const { format } = require(__dirname + "/../framework/mesfonctions");
-const os = require("os");
-const moment = require("moment-timezone");
-const s = require(__dirname + "/../set");
-const more = String.fromCharCode(8206)
-const readmore = more.repeat(4001)
-
-zokou({ nomCom: "script", categorie: "General" }, async (dest, zk, commandeOptions) => {
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//zokou");
-    var coms = {};
-    var mode = "public";
-    
-    if ((s.MODE).toLocaleLowerCase() != "yes") {
-        mode = "private";
-    }
-
-
-    
-
-    cm.map(async (com, index) => {
-        if (!coms[com.categorie])
-            coms[com.categorie] = [];
-        coms[com.categorie].push(com.nomCom);
-    });
-
-    moment.tz.setDefault('Etc/GMT');
-
-// Créer une date et une heure en GMT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
-
-  let infoMsg =  `
-   *BMW MD IMPORTANT INFO* 
-❒───────────────────❒
-*GITHUB LINK*
-> https://github.com/ibrahimaitech/BMW-MD
-
-*WHATSAPP CHANNEL*
-> https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y
-
-*FOR MORE INFO TAP ON THE LINK BELOW*
-> https://github.com/IBRAHIM-TECH-AI/IBRAHIM-ADAMS-INFO⁠
-╭───────────────────❒
-│❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒⁠⁠⁠⁠ *DEV* : *Ibrahim Adams*
-⁠⁠⁠⁠╰───────────────────❒
-  `;
-    
-let menuMsg = `
-     𝑰𝑩𝑹𝑨𝑯𝑰𝑴 𝑨𝑫𝑨𝑴𝑺 𝑺𝑪𝑰𝑬𝑵𝑪𝑬
-
-❒────────────────────❒`;
-
-   var lien = mybotpic();
-
-   if (lien.match(/\.(mp4|gif)$/i)) {
-    try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-else {
-    
-    repondre(infoMsg + menuMsg);
-    
-}
-
-});*/
+  } catch (error) {
+    console.error("Error:", error);
+    m.reply('An unexpected error occurred while generating the repo information.');
+  }
+};
