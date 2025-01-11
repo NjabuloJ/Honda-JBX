@@ -19,7 +19,6 @@ class YT {
     static isYTUrl = (url) => {
         return ytIdRegex.test(url)
     }
-
     /**
      * VideoID from url
      * @param {string|URL} url to get videoID
