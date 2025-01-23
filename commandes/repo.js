@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 
-zokou({ nomCom: "repo", catégorie:"Général", reaction: "🔎", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "repo", catégorie:"Général", reaction: "🚔", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
   const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-jb';
   const img = 'https://files.catbox.moe/xfn913.jpg';
 
@@ -24,7 +24,7 @@ zokou({ nomCom: "repo", catégorie:"Général", reaction: "🔎", nomFichier: __
       const gitdata = `> *Hi there,If you need Njabulo-Jb repo*\n> *Anything You want Is Here*
 ╭─────────────────
 ││ *𝐒𝐞𝐬𝐬𝐢𝐨𝐧* https://shorturl.at/9WfYs
-││ *𝐑𝐞𝐩𝐨:* https://shorturl.at/0TtVa
+││ *𝐑𝐞𝐩𝐨:* github.com/NjabuloJ/Njabulo-jb
 ││ *𝐒𝐭𝐚𝐫𝐬:* ${repoInfo.stars}
 ││ *𝐅𝐨𝐫𝐤𝐬:* ${repoInfo.forks}
 ││ *𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐃𝐚𝐭𝐞:* ${releaseDate}
