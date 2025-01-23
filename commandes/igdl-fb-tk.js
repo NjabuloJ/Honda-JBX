@@ -29,7 +29,7 @@ zokou({nomCom : "instagram" , categorie : "Download"},async (dest , zk , command
 zokou({
   nomCom: "fb",
   categorie: "Download",
-  reaction: "📽️"
+  reaction: "🎬"
 },
 async (dest, zk, commandeOptions) => {
   const { repondre, ms, arg } = commandeOptions;
@@ -49,7 +49,7 @@ async (dest, zk, commandeOptions) => {
         Lien: ${result.url}
       `;
        zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.hd  }, caption: 'facebook video downloader powered by *popkid-MD*' }, { quoted: ms });
+       zk.sendMessage(dest, { video: { url: result.hd  }, caption: 'facebook video downloader powered by *☆ɴᴊᴀʙᴜʟᴏ-ᴊʙ☆*' }, { quoted: ms });
       
     })
     .catch((error) => {console.log("Error:", error)
@@ -91,9 +91,9 @@ Description: ${tik.desc}
 });
 
 zokou({
-  nomCom: "facebook2",
+  nomCom: "fb2",
   categorie: "Download",
-  reaction: "📽️"
+  reaction: "🎞️"
 },
 async (dest, zk, commandeOptions) => {
   const { repondre, ms, arg } = commandeOptions;
@@ -113,7 +113,7 @@ async (dest, zk, commandeOptions) => {
         Lien: ${result.url}
       `;
        zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.sd  }, caption: 'facebook video downloader powered by *popkid-MD*' }, { quoted: ms });
+       zk.sendMessage(dest, { video: { url: result.sd  }, caption: 'facebook video downloader powered by *☆ɴᴊᴀʙᴜʟᴏ-ᴊʙ☆*' }, { quoted: ms });
       
     })
     .catch((error) => {console.log("Error:", error)
