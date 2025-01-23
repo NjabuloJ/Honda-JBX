@@ -39,7 +39,7 @@ zokou(
       }});
     await zk.sendMessage(dest, {
       react: {
-        text: "⚙️", key: ms.key
+        text: "🚔", key: ms.key
       }})
   }
 )
