@@ -19,7 +19,7 @@ const { default: axios } = require('axios');
 
 
 
-zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "tagall", categorie: 'Group', reaction: "💬" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser } = commandeOptions
 
@@ -36,8 +36,8 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
   var tag = ""; 
   tag +=`
   
-╭─────────────────━┈⊷ 
-│ *Njabulo JB Tags*
+╭─────────────────━┈⊷*
+│ *☆ɴᴊᴀʙᴜʟᴏ-ᴊʙ☆*
 ╰─────────────────━┈⊷ \n
 │⭕ *Group* : ${nomGroupe} 
 │⭕ *Hey😀* : *${nomAuteurMessage}* 
@@ -50,7 +50,7 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
 
 
 
-  let emoji = ['🦴', '👀', '😮‍💨', '❌', '✔️', '😇', '⚙️', '🔧', '🎊', '😡', '🙏🏿', '⛔️', '$','😟','🥵','🐅']
+  let emoji = ['🚔', '💗', '🚀', '❌', '⛱️', '🖥️', '🗂️', '🔧', '🎊', '😡', '🙏🏿', '🚬', '$','😟','🔰','🟢']
   let random = Math.floor(Math.random() * (emoji.length - 1))
 
 
@@ -68,7 +68,7 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
 });
 
 
-zokou({ nomCom: "link", categorie: 'Group', reaction: "🙋" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "link", categorie: 'Group', reaction: "💬" }, async (dest, zk, commandeOptions) => {
   const { repondre, nomGroupe, nomAuteurMessage, verifGroupe } = commandeOptions;
   if (!verifGroupe) { repondre("wait bro , you want the link to my dm?"); return; };
 
@@ -84,7 +84,7 @@ Group link :${lien} \n\n© Njabulo Jb`
 
 });
 /** *nommer un membre comme admin */
-zokou({ nomCom: "promote", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "promote", categorie: 'Group', reaction: "💬" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   if (!verifGroupe) { return repondre("For groups only"); }
