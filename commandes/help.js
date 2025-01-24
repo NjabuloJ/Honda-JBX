@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
 
-zokou({ nomCom: "helps", categorie: "update" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "help", categorie: "update" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -37,7 +37,7 @@ const date = moment().format('DD/MM/YYYY');
   ╭──━━━━══➻══━━━━✣
   ┃➳ *my owner* : ${s.OWNER_NAME}
   ┃➳ *commander* : ${nomAuteurMessage} 
-  ┃➳ *date *: ${date}
+  ┃➳ *date*: ${date}
   ┃➳ *prefix* : ${s.PREFIXE}
   ┃➳ *worktype* : ${mode} mode
   ┃➳ *plugin* : ${cm.length} 
@@ -45,15 +45,15 @@ const date = moment().format('DD/MM/YYYY');
   ┃➳ *running on* : ${os.platform()}
   ┃➳ *theme* : *JB*
   ╰──━━━━══➻══━━━━✣ ${readmore}
- ▒▓10% 
- ▒▓▓20%    
- ▒▓▓▓30%   
- ▒▓▓▓▓40%   
- ▒▓▓▓▓▓50% 
- ▒▓▓▓▓▓▓60% 
- ▒▓▓▓▓▓▓▓70% 
- ▒▓▓▓▓▓▓▓▓80%
- ▒▓▓▓▓▓▓▓▓▓90% 
+ ▒▓10% 🤣
+ ▒▓▓20% ☹️   
+ ▒▓▓▓30% 😂  
+ ▒▓▓▓▓40% 😭  
+ ▒▓▓▓▓▓50% 😆
+ ▒▓▓▓▓▓▓60% 😁
+ ▒▓▓▓▓▓▓▓70% 😅
+ ▒▓▓▓▓▓▓▓▓80% 🤤
+ ▒▓▓▓▓▓▓▓▓▓90% 🤫 
  ▒▓▓▓▓▓▓▓▓▓▓100% ${readmore}
  *ALL COMMAND ADDED✔️!* 
  ╰──━━━━══➻══━━━━❂`;
