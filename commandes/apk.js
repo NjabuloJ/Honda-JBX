@@ -46,14 +46,7 @@ zokou({
         document: { url: appDetails.BK9.dllink },
         fileName: `${appDetails.BK9.name}.apk`,
         mimetype: "application/vnd.android.package-archive",
-        caption: "*╭━━〔 *DOWNAPK* 〕━━••═━••═━━⊛     
-│╭━━══─══━━⊛
-│║
-│║◆┊➻╭──> 🗂️ *NJABULO JB* 
-│║◆┊➻╭──> 🚔 *APK DOWNLOAD*
-┌┤
-┊╰─━━═••═━━••═━━••═━━••═━━⊛      
-╰⊷••☆ɴᴊᴀʙᴜʟᴏ-ᴊʙ✧••*"
+        caption: "*power by ☆ɴᴊᴀʙᴜʟᴏ-ᴊʙ✧*"
       },
       { quoted: ms }
     );
