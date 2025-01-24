@@ -1,160 +1,80 @@
-require("dotenv").config();
-const {
-  zokou
-} = require("../framework/zokou");
-const yts = require("yt-search");
-const BaseUrl = process.env.GITHUB_GIT;
-const giftedapikey = process.env.BOT_OWNER;
-function validateConfig() {
-  if (!BaseUrl || !giftedapikey) {
-    throw new Error("Configuration error: Missing BaseUrl or API key.");
-  }
-}
-validateConfig();
+const { zokou } = require("../framework/zokou");
+const yts = require('yt-search');
+const ytdl = require('ytdl-core');
+const fs = require('fs');
+const yt=require("../framework/dl/ytdl-core.js")
+const ffmpeg = require("fluent-ffmpeg");
+const yts1 = require("youtube-yts");
+//var fs =require("fs-extra")
+
 zokou({
-  'nomCom': "video",
-  'categorie': "Search",
-  'reaction': '🎬'
-}, async (_0x246c76, _0x43608a, _0x7dc04e) => {
-  const {
-    ms: _0x5ddcc9,
-    repondre: _0x59580a,
-    arg: _0xe570ef
-  } = _0x7dc04e;
-  if (!_0xe570ef[0]) {
-    return _0x59580a("Please insert a song/video name.");
+  nomCom: "song",
+  categorie: "Search",
+  reaction: "🎶"
+}, async (origineMessage, zk, commandeOptions) => {
+  const { ms, repondre, arg } = commandeOptions;
+     
+  if (!arg[0]) {
+    repondre("wrong!!! Ie. _Play hozambe by Beltah ft shifura._");
+    return;
   }
+
   try {
-    const _0x78f812 = await yts(_0xe570ef.join(" "));
-    const _0x2c1653 = _0x78f812.videos;
-    if (_0x2c1653.length === 0) {
-      return _0x59580a("No videos found.");
-    }
-    const _0x459a98 = _0x2c1653[0].url;
-    const _0x5af7ff = await fetch(BaseUrl + "/api/download/ytmp4?url=" + encodeURIComponent(_0x459a98) + "&apikey=" + giftedapikey);
-    const _0x3b69f5 = await _0x5af7ff.json();
-    if (_0x3b69f5.status === 200 && _0x3b69f5.success) {
-      const _0x8564e6 = _0x3b69f5.result.download_url;
-      await _0x43608a.sendMessage(_0x246c76, {
-        'image': {
-          'url': _0x2c1653[0].thumbnail
-        },
-        'caption': "╭━━━━━═━••⊷••───⊛\n┊ 『 *NJABULO* 』\n┊ *NJABULO JB MEDIA* \n┊ *njabulo* \n╰━━━━━═━••⊷••───⊛"
-      }, {
-        'quoted': _0x5ddcc9
+    let topo = arg.join(" ")
+    const search = await yts(topo);
+    const videos = search.videos;
+
+    if (videos && videos.length > 0 && videos[0]) {
+      const urlElement = videos[0].url;
+          
+       let infoMess = {
+          image: {url : videos[0]. thumbnail},
+         caption : `\nNJABULO JB‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎\n\n*Audio name :* _${videos[0].title}_
+
+*Time :* _${videos[0].timestamp}_
+
+*Url :* _${videos[0].url}_
+
+
+_*©𝐞𝐧g𝐳𝐨*_`
+       }
+
+      
+
+      
+
+      
+       zk.sendMessage(origineMessage,infoMess,{quoted:ms}) ;
+      // Obtenir le flux audio de la vidéo
+      const audioStream = ytdl(urlElement, { filter: 'audioonly', quality: 'highestaudio' });
+
+      // Nom du fichier local pour sauvegarder le fichier audio
+      const filename = 'audio.mp3';
+
+      // Écrire le flux audio dans un fichier local
+      const fileStream = fs.createWriteStream(filename);
+      audioStream.pipe(fileStream);
+
+      fileStream.on('finish', () => {
+        // Envoi du fichier audio en utilisant l'URL du fichier local
+      
+
+     zk.sendMessage(origineMessage, { audio: { url:"audio.mp3"},mimetype:'audio/mp4' }, { quoted: ms,ptt: false });
+        console.log("Envoi du fichier audio terminé !");
+
+     
       });
-      await _0x43608a.sendMessage(_0x246c76, {
-        'video': {
-          'url': _0x8564e6
-        },
-        'mimetype': "video/mp4"
-      }, {
-        'quoted': _0x5ddcc9
+
+      fileStream.on('error', (error) => {
+        console.error('Erreur lors de l\'écriture du fichier audio :', error);
+        repondre('Une erreur est survenue lors de l\'écriture du fichier audio.');
       });
-      _0x59580a("*[Downloaded Successfully by Njabulo JB]✓*");
     } else {
-      _0x59580a("Failed to download the video.");
+      repondre('Aucune vidéo trouvée.');
     }
-  } catch (_0x487250) {
-    console.error("Error:", _0x487250);
-    _0x59580a("An error occurred while processing your request.");
-  }
-});
-zokou({
-  'nomCom': "play",
-  'categorie': "Download",
-  'reaction': '🎶'
-}, async (_0x5a2f72, _0x48087c, _0x242194) => {
-  const {
-    ms: _0x1eb161,
-    repondre: _0x3adfb5,
-    arg: _0x12a314
-  } = _0x242194;
-  if (!_0x12a314[0]) {
-    return _0x3adfb5("Please insert a song name.");
-  }
-  try {
-    const _0x230e37 = await yts(_0x12a314.join(" "));
-    const _0x215553 = _0x230e37.videos;
-    if (_0x215553.length === 0) {
-      return _0x3adfb5("No audio found.");
-    }
-    const _0x1dda6f = _0x215553[0].url;
-    const _0x15847d = await fetch(BaseUrl + "/api/download/ytmp3?url=" + encodeURIComponent(_0x1dda6f) + "&apikey=" + giftedapikey);
-    const _0x2c3cff = await _0x15847d.json();
-    if (_0x2c3cff.status === 200 && _0x2c3cff.success) {
-      const _0x5938bf = _0x2c3cff.result.download_url;
-      await _0x48087c.sendMessage(_0x5a2f72, {
-        'image': {
-          'url': _0x215553[0].thumbnail
-        },
-        'caption': "╭━━━━━═━••⊷••───⊛\n┊ 『 *Njabulo* 』\n┇ *NJABULO MD Njabulo* \n┇ *njabulo* \n╰━━━━━═━••⊷••───⊛"
-      }, {
-        'quoted': _0x1eb161
-      });
-      await _0x48087c.sendMessage(_0x5a2f72, {
-        'audio': {
-          'url': _0x5938bf
-        },
-        'mimetype': "audio/mp4"
-      }, {
-        'quoted': _0x1eb161
-      });
-      _0x3adfb5("*[Downloaded Successfully by Njabulo JB]✓*");
-    } else {
-      _0x3adfb5("Failed to download audio. Try again later.");
-    }
-  } catch (_0x2bfc0f) {
-    console.error("Error:", _0x2bfc0f);
-    _0x3adfb5("An error occurred while processing your request.");
-  }
-});
-zokou({
-  'nomCom': "play",
-  'categorie': "Download",
-  'reaction': '🎶'
-}, async (_0x5fbcae, _0x127b13, _0x54b141) => {
-  const {
-    ms: _0x465547,
-    repondre: _0x3febab,
-    arg: _0x4ccb4f
-  } = _0x54b141;
-  if (!_0x4ccb4f[0]) {
-    return _0x3febab("Please insert a song name.");
-  }
-  try {
-    const _0x56a69b = await yts(_0x4ccb4f.join(" "));
-    const _0x528529 = _0x56a69b.videos;
-    if (_0x528529.length === 0) {
-      return _0x3febab("No audio found.");
-    }
-    const _0x3f250c = _0x528529[0].url;
-    const _0x27115b = await fetch(BaseUrl + "/api/download/ytmp3?url=" + encodeURIComponent(_0x3f250c) + "&apikey=" + giftedapikey);
-    const _0x1c3b78 = await _0x27115b.json();
-    if (_0x1c3b78.status === 200 && _0x1c3b78.success) {
-      const _0x1a0016 = _0x1c3b78.result.download_url;
-      await _0x127b13.sendMessage(_0x5fbcae, {
-        'image': {
-          'url': _0x528529[0].thumbnail
-        },
-        'caption': "╭━━━━━═━••⊷••───⊛\n┊ 『 *NJABULO* 』\n┊ *NJABULO JB MEDIA* \n┊ *njabulo* \n╰━━━━━═━••⊷••───⊛"
-      }, {
-        'quoted': _0x465547
-      });
-      await _0x127b13.sendMessage(_0x5fbcae, {
-        'audio': {
-          'url': _0x1a0016
-        },
-        'mimetype': "audio/mp4"
-      }, {
-        'quoted': _0x465547
-      });
-      _0x3febab("*[Downloaded Successfully by Njabulo JB]✓*");
-    } else {
-      _0x3febab("Failed to download audio. Try again later.");
-    }
-  } catch (_0x110822) {
-    console.error("Error:", _0x110822);
-    _0x3febab("An error occurred while processing your request.");
+  } catch (error) {
+    console.error('Erreur lors de la recherche ou du téléchargement de la vidéo :', error);
+    
+    repondre('Une erreur est survenue lors de la recherche ou du téléchargement de la vidéo.');
   }
 });
