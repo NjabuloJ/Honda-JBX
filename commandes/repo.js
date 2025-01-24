@@ -23,13 +23,13 @@ zokou({ nomCom: "repo", catégorie:"Général", reaction: "🚔", nomFichier: __
 
       const gitdata = `> *Hi there,If you need Njabulo-Jb repo*\n> *Anything You want Is Here*
 ╭─────────────────
-││ *𝐒𝐞𝐬𝐬𝐢𝐨𝐧* https://shorturl.at/9WfYs
+││ *𝐒𝐞𝐬𝐬𝐢𝐨𝐧* https://njabulo-5778.onrender.com
 ││ *𝐑𝐞𝐩𝐨:* github.com/NjabuloJ/Njabulo-jb
 ││ *𝐒𝐭𝐚𝐫𝐬:* ${repoInfo.stars}
 ││ *𝐅𝐨𝐫𝐤𝐬:* ${repoInfo.forks}
 ││ *𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐃𝐚𝐭𝐞:* ${releaseDate}
 ││ *𝐔𝐩𝐝𝐚𝐭𝐞𝐝:* ${repoInfo.lastUpdate}
-││ *𝐎𝐰𝐧𝐞𝐫:* *Njabulo*
+││ *𝐎𝐰𝐧𝐞𝐫:* *Njabulo JB*
 ││ *𝐂𝐡𝐚𝐧𝐧𝐞𝐥:* https://shorturl.at/q8ZuS
 ╰─────────────────
 > *Njabulo Jb*`;
