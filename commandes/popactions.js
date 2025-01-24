@@ -213,7 +213,7 @@ adams({ nomCom: "kickall", categorie: 'Group', reaction: "📣" }, async (dest, 
   const metadata = await zk.groupMetadata(dest) ;
  
 
-  if (!verifGroupe) { repondre("✋🏿 ✋🏿this command is reserved for groups ❌"); return; }
+  if (!verifGroupe) { repondre("> ✋🏿 ✋🏿this command is reserved for groups ❌"); return; }
   if (superUser || auteurMessage == metadata.owner) { 
   
    repondre('No_admin members will be removed from the group. You have 5 seconds to reclaim your choice by restarting the bot.') ;
