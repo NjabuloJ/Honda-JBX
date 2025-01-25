@@ -35,19 +35,18 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
   ╭──━━━━══➻══━━━━╶━╮
-  ┃ *my owner* : ${s.OWNER_NAME}
-  ┃ *commander* : ${nomAuteurMessage} 
+  ┃ *bot name* : ${s.OWNER_NAME}
+  ┃ *use name* : ${nomAuteurMessage} 
   ┃ *date*: ${date}
   ┃ *prefix* : ${s.PREFIXE}
   ┃ *worktype* : ${mode}
   ┃ *plugin* : ${cm.length} 
-  ┃ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-  ┃ *running on* : ${os.platform()}
+  ┃ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())
   ┃ *time* : ${temps}
   ╰──━━━━══➻══━━━━━✣ 
 
 
-  ╰┈➤${readmore}
+  ╰┈━══━➤${readmore}
 Available Commands:
 
 *IA*
@@ -86,7 +85,7 @@ Available Commands:
 - .hack2
 - .wallpaper1
 - .menu
-
+  ╰┈━══━➤${readmore}
 *Group*
 - .quote
 - .kickall
@@ -124,7 +123,7 @@ Available Commands:
 - .antilink-all
 - .tagadmin
 - .warn
-
+  ╰┈━══━➤${readmore}
 *Mods*
 - .tgs
 - .crew
@@ -150,7 +149,7 @@ Available Commands:
 - .quote
 - .rank
 - .toprank
-
+  ╰┈━══━➤${readmore}
 *Search*
 - .google
 - .imdb
@@ -181,7 +180,7 @@ Available Commands:
 - .fb2
 - .play
 - .song
-
+  ╰┈━══━➤${readmore}
 *Audio-Edit*
 - .deep
 - .bass
@@ -225,7 +224,7 @@ Available Commands:
 - .quotes
 - .whois
 - .getpp
-
+  ╰┈━══━➤${readmore}
 *JB-PICS*
 - .design
 
@@ -267,7 +266,7 @@ Available Commands:
 - .masterbation
 - .thigh
 - .panty
-
+  ╰┈━══━➤${readmore}
 *Modern-Logo*
 - .birthday1
 - .birthday2
@@ -316,7 +315,7 @@ Available Commands:
 - .christmas
 - .mechanical
 
-
+  ╰┈━══━➤${readmore}
 *META-AI*
 - .meta
 - .genix
@@ -366,7 +365,7 @@ Available Commands:
 - .dit
 - .itta
 - .say
-
+  ╰┈━══━➤${readmore}
 *modern-logo*
 - .videologo
 
@@ -393,7 +392,8 @@ Available Commands:
 - .shinobu
 - .megumin
 - .cosplay
-- .couplepp`;
+- .couplepp
+  ╰┈━══━━══━══━══━══━══➤}`;
     
 let menuMsg = `  
     
