@@ -8,7 +8,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
 
-zokou({ nomCom: "menu", categorie: "menu" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "help", categorie: "update" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -34,8 +34,8 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-  ╭──━━━━══➻══━━━━━╮
-  ┃ *my owner* : ${s.OWNER_NAME}
+  ╭──━━━━══➻══━━━━✣
+  ┃ *bot name* : ${s.OWNER_NAME}
   ┃ *commander* : ${nomAuteurMessage} 
   ┃ *date*: ${date}
   ┃ *prefix* : ${s.PREFIXE}
@@ -43,13 +43,11 @@ const date = moment().format('DD/MM/YYYY');
   ┃ *plugin* : ${cm.length} 
   ┃ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
   ┃ *running on* : ${os.platform()}
-  ┃ *time* : ${temps}
-  ╰──━━━━══➻══━━━━━━╮ 
- 
-‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
-  > 🔏Njabulo JB oll file's💬
+  ┃ *theme* : *JB*
+  ╰──━━━━══➻══━━━━✣ ${readmore}
+ ‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 
-  ╰┈━┈➤${readmore}
+
 
 Available Commands:
 
@@ -63,6 +61,12 @@ Available Commands:
 - .gemini2
 - .idea
 
+*Ai*
+- Njabulo
+- .dalle
+- .gpt
+- .bot
+
 *General*
 - .owner
 - .dev
@@ -73,10 +77,9 @@ Available Commands:
 - .url
 - .deploy
 - .ping
-- .obt
+- .ping1
 - .getall
 - .broadcast
-- .gay
 - .deployer
 - .poll
 - .repo
@@ -84,8 +87,6 @@ Available Commands:
 - .test
 - .uptime
 - .ss
-- .vcf5
-- .getallmembers
 - .channel
 - .done
 - .update
@@ -93,7 +94,6 @@ Available Commands:
 - .done
 - .hack2
 - .wallpaper1
-- .enc
 - .menu
 
 *Group*
@@ -105,17 +105,13 @@ Available Commands:
 - .goodbye
 - .antipromote
 - .antidemote
-- .vcf
 - .add
-- .disap-off
 - .disap
 - .req
 - .disap90
 - .reject
-- .disap7
-- .disap1
 - .approve
-- .vcf10
+- .vcf
 - .tagall
 - .invite
 - .promote
@@ -133,7 +129,6 @@ Available Commands:
 - .automute
 - .autounmute
 - .fkick
-- .nsfw
 - .antiword
 - .antilink-all
 - .tagadmin
@@ -188,11 +183,11 @@ Available Commands:
 
 *Download*
 - .apk
-- .apk
+- .fb
 - .igdl
 - .fbdl
 - .tiktok
-- .fbdl2
+- .fb2
 - .play
 - .song
 
@@ -207,9 +202,6 @@ Available Commands:
 
 *God-first*
 - .bible
-
-*DULLAH-MD PICTURES*
-- .asthetic
 
 *Menu*
 - .bugmenu
@@ -243,7 +235,7 @@ Available Commands:
 - .whois
 - .getpp
 
-*DULL-PICS*
+*JB-PICS*
 - .design
 
 *Games*
@@ -251,7 +243,7 @@ Available Commands:
 - .chifumi
 - .quizz
 
-*DULLAH-TEST*
+*NJABULO-TEST*
 - .anticall
 - .areact
 - .readstatus
@@ -266,9 +258,14 @@ Available Commands:
 - .alwaysonline
 - .privatemode
 
-*dullah*
+*Njabulo JB*
 - .gpt
 
+*search*
+- .gpt
+- .lyrics
+- .lyric2
+- .Njabulo
 *Hentai*
 - .hwaifu
 - .trap
@@ -290,7 +287,32 @@ Available Commands:
 - .birthday7
 - .comic
 - .zodiac
-- .underwater2- .galaxy
+- .underwater2
+- .glow
+- .avatargold
+- .bokeh
+- .firework
+- .gaming
+- .signature
+- .luxury
+- .dragonfire
+- .queencard
+- .graffiticolor
+- .tattoo
+- .pentakill
+- .halloween1
+- .horror
+- .halloween2
+- .women's-day
+- .valentine
+- .neonlight
+- .assassin
+- .foggy
+- .summer
+- .light
+- .moderngold
+- .cartoonstyle
+- .galaxy
 - .hacker
 - .dragonball
 - .naruto
@@ -306,6 +328,11 @@ Available Commands:
 
 *Finance*
 - .math
+
+*FUN*
+- .flirt
+- .pickupline
+- .yomama😂
 
 *META-AI*
 - .meta
@@ -357,6 +384,9 @@ Available Commands:
 - .itta
 - .say
 
+*modern-logo*
+- .videologo
+
 *Général*
 - .vv
 
@@ -370,10 +400,9 @@ Available Commands:
 - .pmbug
 - .delaybug
 - .docubug
-- .unlimitedbug
-- .bombug
-- .lagbug
-- .trollybug
+- .unlimi
+- .bombug 
+- .trolly
 
 *Weeb*
 - .waifu
@@ -383,7 +412,7 @@ Available Commands:
 - .cosplay
 - .couplepp`;
     
-let menuMsg = Njabulo JB`  
+let menuMsg = `  
     
 `;
 
