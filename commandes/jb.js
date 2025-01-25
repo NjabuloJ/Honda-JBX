@@ -156,35 +156,6 @@ Available Commands:
 - .telesticker
 - .reboot
 
-*AI*
-- .lulcat
-- .sadcat
-- .nokia
-- .unforgivable
-- .1917
-- .cartoon
-- .underwater
-- .watercolor
-- .gfx
-- .gfx2
-- .gfx3
-- .gfx4
-- .gfx5
-- .gfx6
-- .pooh
-- .oogway
-- .drake
-- .biden
-- .drip
-- .clown
-- .ad
-- .blur
-- .meme
-- .pet
-- .alert
-- .caution
-- .gpt5
-
 *Fun*
 - .hack
 - .ranime
@@ -319,32 +290,7 @@ Available Commands:
 - .birthday7
 - .comic
 - .zodiac
-- .underwater2
-- .glow
-- .avatargold
-- .bokeh
-- .firework
-- .gaming
-- .signature
-- .luxury
-- .dragonfire
-- .queencard
-- .graffiticolor
-- .tattoo
-- .pentakill
-- .halloween1
-- .horror
-- .halloween2
-- .women's-day
-- .valentine
-- .neonlight
-- .assassin
-- .foggy
-- .summer
-- .light
-- .moderngold
-- .cartoonstyle
-- .galaxy
+- .underwater2- .galaxy
 - .hacker
 - .dragonball
 - .naruto
@@ -360,11 +306,6 @@ Available Commands:
 
 *Finance*
 - .math
-
-*FUN*
-- .flirt
-- .pickupline
-- .yomama😂
 
 *META-AI*
 - .meta
