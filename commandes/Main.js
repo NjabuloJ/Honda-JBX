@@ -44,7 +44,25 @@ const date = moment().format('DD/MM/YYYY');
   ┃➳ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
   ┃➳ *running on* : ${os.platform()}
   ┃➳ *theme* : *JB*
-  ╰──━━━━══➻══━━━━✣ ${readmore}
+  ╰──━━━━══➻══━━━━✣
+  categorizedCommands[category].push(command.nomCom);
+    });
+
+    // Get current time and format it
+    moment.tz.setDefault("Africa/Nairobi");
+    const currentTime = moment();
+    const formattedTime = currentTime.format("HH:mm:ss");
+    const formattedDate = currentTime.format("DD/MM/YYYY");
+    const currentHour = currentTime.hour();
+
+    const greetings = ["Good Morning 🌄", "Good Afternoon 🌃", "Good Evening ⛅", "Good Night 🌙"];
+    const greeting = currentHour < 12 ? greetings[0] : currentHour < 17 ? greetings[1] : currentHour < 21 ? greetings[2] : greetings[3];
+
+    // Fetch GitHub stats
+    const { totalUsers } = await fetchGitHubStats();
+    const formattedTotalUsers = totalUsers.toLocaleString();
+  
+  ${readmore}
  ▒▓10% 🤣
  ▒▓▓20% ☹️   
  ▒▓▓▓30% 😂  
@@ -58,16 +76,7 @@ const date = moment().format('DD/MM/YYYY');
  *ALL COMMAND ADDED✔️!* 
  ╰──━━━━══➻══━━━━❂`;
     
-let menuMsg =     // Get current time and format it
-    moment.tz.setDefault("Africa/Nairobi");
-    const currentTime = moment();
-    const formattedTime = currentTime.format("HH:mm:ss");
-    const formattedDate = currentTime.format("DD/MM/YYYY");
-    const currentHour = currentTime.hour();
-
-    const greetings = ["Good Morning 🌄", "Good Afternoon 🌃", "Good Evening ⛅", "Good Night 🌙"];
-    const greeting = currentHour < 12 ? greetings[0] : currentHour < 17 ? greetings[1] : currentHour < 21 ? greetings[2] : greetings[3];
-    `  
+let menuMsg =  `  
     
 `;
 
