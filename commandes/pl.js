@@ -34,7 +34,7 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-  ╭──━━━━══➻══━━━━✣
+  ╭──━━━━══➻══━━━━╶━╮
   ┃ *my owner* : ${s.OWNER_NAME}
   ┃ *commander* : ${nomAuteurMessage} 
   ┃ *date*: ${date}
@@ -44,8 +44,10 @@ const date = moment().format('DD/MM/YYYY');
   ┃ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
   ┃ *running on* : ${os.platform()}
   ┃ *theme* : *JB*
-  ╰──━━━━══➻══━━━━✣ ${readmore}
+  ╰──━━━━══➻══━━━━━✣ 
 
+
+  ╰┈➤${readmore}
 Available Commands:
 
 *IA*
