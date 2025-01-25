@@ -41,8 +41,8 @@ const date = moment().format('DD/MM/YYYY');
   ┃ *prefix* : ${s.PREFIXE}
   ┃ *worktype* : ${mode}
   ┃ *plugin* : ${cm.length} 
-  ┃ *running on* : ${os.platform()}
   ┃ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())
+  ┃ *running on* : ${os.platform()} 
   ┃ *time* : ${temps}
   ╰──━━━━══➻══━━━━━✣ 
 
