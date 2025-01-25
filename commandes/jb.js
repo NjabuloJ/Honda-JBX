@@ -77,7 +77,6 @@ const date = moment().format('DD/MM/YYYY');
 - .ping
 - .ping1
 - .getall
-- .broadcast
 - .deployer
 - .poll
 - .repo
@@ -90,12 +89,11 @@ const date = moment().format('DD/MM/YYYY');
 - .update
 - .vision
 - .done
-- .hack2
-- .wallpaper1
+- .hack
+- .wallpaper
 - .menu
 
 📃 *Group*
-- .quote
 - .kickall
 - .onlyadmin
 - .forward
@@ -105,9 +103,6 @@ const date = moment().format('DD/MM/YYYY');
 - .antidemote
 - .add
 - .disap
-- .req
-- .disap90
-- .reject
 - .approve
 - .vcf
 - .tagall
@@ -119,10 +114,8 @@ const date = moment().format('DD/MM/YYYY');
 - .antilink
 - .antibot
 - .group
-- .gname
 - .gdesc
 - .revoke
-- .gpp
 - .hidetag
 - .automute
 - .autounmute
@@ -141,7 +134,7 @@ const date = moment().format('DD/MM/YYYY');
 - .block
 - .unblock
 - .ban
-- .- .sudo
+- .sudo
 - .save
 - .mention
 - .boom
@@ -178,7 +171,7 @@ const date = moment().format('DD/MM/YYYY');
 - .photo
 - .trt
 
-*Download*
+📃 *Download*
 - .apk
 - .fb
 - .igdl
@@ -188,7 +181,7 @@ const date = moment().format('DD/MM/YYYY');
 - .play
 - .song
 
-*Audio-Edit*
+📜 *Audio-Edit*
 - .deep
 - .bass
 - .reverse
@@ -197,13 +190,16 @@ const date = moment().format('DD/MM/YYYY');
 - .tempo
 - .nightcore
 
-*God-first*
+📃 *God-first*
 - .bible
 
-*Menu*
+🗒️*Menu*
 - .bugmenu
+- .donwmenu
+- .help
+- .list 
 
-*Image-Edit*
+📄 *Image-Edit*
 - .shit
 - .wasted
 - .wanted
@@ -223,7 +219,7 @@ const date = moment().format('DD/MM/YYYY');
 - .greyscale
 - .joke
 
-*User*
+📜 *User*
 - .rent
 - .del
 - .mygroups
@@ -232,15 +228,15 @@ const date = moment().format('DD/MM/YYYY');
 - .whois
 - .getpp
 
-*JB-PICS*
+📃 *Njabulo-PICS*
 - .design
 
-*Games*
+🗒️ *Games*
 - .riddle
 - .chifumi
 - .quizz
 
-*NJABULO-TEST*
+📄 *NJABULO-TEST*
 - .anticall
 - .areact
 - .readstatus
@@ -255,15 +251,13 @@ const date = moment().format('DD/MM/YYYY');
 - .alwaysonline
 - .privatemode
 
-*Njabulo JB*
-- .gpt
-
-*search*
+📜 *search*
 - .gpt
 - .lyrics
 - .lyric2
 - .Njabulo
-*Hentai*
+
+📃 *Hentai*
 - .hwaifu
 - .trap
 - .hneko
@@ -274,14 +268,10 @@ const date = moment().format('DD/MM/YYYY');
 - .thigh
 - .panty
 
-*Modern-Logo*
+🗒️ *Modern-Logo*
+- .birthday
 - .birthday1
 - .birthday2
-- .birthday3
-- .birthday4
-- .birthday5
-- .birthday6
-- .birthday7
 - .comic
 - .zodiac
 - .underwater2
@@ -323,26 +313,13 @@ const date = moment().format('DD/MM/YYYY');
 - .christmas
 - .mechanical
 
-*Finance*
+📄 *Finance*
 - .math
+- .English 
+- .content 
+- .agriculture
 
-*FUN*
-- .flirt
-- .pickupline
-- .yomama😂
-
-*META-AI*
-- .meta
-- .genix
-- .sdxl
-- .monster
-- .midjourney
-- .pixart
-
-*other*
-- .encode
-
-*Reaction*
+🗒️ *Reaction*
 - .bully
 - .cuddle
 - .cry
@@ -371,23 +348,20 @@ const date = moment().format('DD/MM/YYYY');
 - .dance
 - .cringe
 
-*stickcmd*
+📄 *stickcmd*
 - .setcmd
 - .delcmd
 - .allcmd
 
-*tts*
+📜 *tts*
 - .dit
 - .itta
 - .say
 
-*modern-logo*
-- .videologo
-
-*Général*
+📃 *Général*
 - .vv
 
-*Bug-cmds*
+🗒️ *Bug-cmds*
 - .bu
 - .bug
 - .crash
@@ -401,7 +375,7 @@ const date = moment().format('DD/MM/YYYY');
 - .bombug 
 - .trolly
 
-*Weeb*
+📄 *anime*
 - .waifu
 - .neko
 - .shinobu
