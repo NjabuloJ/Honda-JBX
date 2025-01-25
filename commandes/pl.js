@@ -39,11 +39,11 @@ const date = moment().format('DD/MM/YYYY');
   ┃ *commander* : ${nomAuteurMessage} 
   ┃ *date*: ${date}
   ┃ *prefix* : ${s.PREFIXE}
-  ┃ *worktype* : ${mode} mode
+  ┃ *worktype* : ${mode}
   ┃ *plugin* : ${cm.length} 
   ┃ *rom* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
   ┃ *running on* : ${os.platform()}
-  ┃ *theme* : *JB*
+  ┃ *time* : ${temps}
   ╰──━━━━══➻══━━━━━✣ 
 
 
