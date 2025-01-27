@@ -59,10 +59,6 @@ const date = moment().format('DD/MM/YYYY');
 - .bot
 - .dalle
 - .gpt
-- .chat
-- .calcul
-- .news
-- .gemini2
 - .Njabulo
 
 📄 *General*
@@ -84,13 +80,8 @@ const date = moment().format('DD/MM/YYYY');
 - .test
 - .uptime
 - .ss
-- .channel
-- .done
 - .update
-- .vision
-- .done
 - .hack
-- .wallpaper
 - .menu
 
 📃 *Group*
@@ -102,7 +93,6 @@ const date = moment().format('DD/MM/YYYY');
 - .antipromote
 - .antidemote
 - .add
-- .disap
 - .approve
 - .vcf
 - .tagall
@@ -114,7 +104,6 @@ const date = moment().format('DD/MM/YYYY');
 - .antilink
 - .antibot
 - .group
-- .gdesc
 - .revoke
 - .hidetag
 - .automute
@@ -138,8 +127,6 @@ const date = moment().format('DD/MM/YYYY');
 - .save
 - .mention
 - .boom
-- .telesticker
-- .reboot
 
 📃 *Fun*
 - .hack
@@ -152,7 +139,6 @@ const date = moment().format('DD/MM/YYYY');
 
 🗒️ *Search*
 - .google
-- .imdb
 - .movie
 - .weather
 - .img
@@ -174,12 +160,12 @@ const date = moment().format('DD/MM/YYYY');
 📃 *Download*
 - .apk
 - .fb
-- .igdl
-- .fbdl
 - .tiktok
 - .fb2
 - .play
 - .song
+- .video 
+- .movie 
 
 📜 *Audio-Edit*
 - .deep
@@ -189,6 +175,8 @@ const date = moment().format('DD/MM/YYYY');
 - .smooth
 - .tempo
 - .nightcore
+- .ring
+- .ringtone 
 
 📃 *God-first*
 - .bible
@@ -220,9 +208,9 @@ const date = moment().format('DD/MM/YYYY');
 - .joke
 
 📜 *User*
-- .rent
+- .code
 - .del
-- .mygroups
+- .groups
 - .fact
 - .quotes
 - .whois
@@ -244,18 +232,8 @@ const date = moment().format('DD/MM/YYYY');
 - .downloadstatus
 - .startmessage
 - .readmessage
-- .pm-permit
-- .publicmode
-- .autorecord
 - .autotyping
 - .alwaysonline
-- .privatemode
-
-📜 *search*
-- .gpt
-- .lyrics
-- .lyric2
-- .Njabulo
 
 📃 *Hentai*
 - .hwaifu
@@ -270,8 +248,6 @@ const date = moment().format('DD/MM/YYYY');
 
 🗒️ *Modern-Logo*
 - .birthday
-- .birthday1
-- .birthday2
 - .comic
 - .zodiac
 - .underwater2
@@ -311,13 +287,7 @@ const date = moment().format('DD/MM/YYYY');
 - .christmas
 - .frost
 - .christmas
-- .mechanical
-
-📄 *Finance*
-- .math
-- .English 
-- .content 
-- .agriculture
+- .mechanical 
 
 🗒️ *Reaction*
 - .bully
@@ -349,11 +319,9 @@ const date = moment().format('DD/MM/YYYY');
 - .cringe
 
 📄 *stickcmd*
-- .setcmd
+- .set
 - .delcmd
 - .allcmd
-
-📜 *tts*
 - .dit
 - .itta
 - .say
